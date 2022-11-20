@@ -1,4 +1,4 @@
-package fr.epsi.lamarrave;
+package fr.epsi.lamarrave.personnages;
 
 import java.util.*;
 

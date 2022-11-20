@@ -1,4 +1,8 @@
-package fr.epsi.lamarrave;
+package fr.epsi.lamarrave.personnages;
+
+import java.util.List;
+
+import fr.epsi.lamarrave.utilitaires.Observateur;
 
 /**
  * Classe représentant un personnage dans le jeu avec toutes les caractéristiques qui lui sont propre
@@ -35,5 +39,10 @@ public class Personnage {
 	 * 
 	 */
 	public int armure;
+
+	/**
+	 * Observateurs de l'objet actuel
+	 */
+	public List<Observateur> observateurs;
 
 }

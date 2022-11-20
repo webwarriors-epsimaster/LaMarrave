@@ -1,6 +1,7 @@
-package fr.epsi.lamarrave;
+package fr.epsi.lamarrave.tours;
 
-import java.util.*;
+import fr.epsi.lamarrave.personnages.Adversaire;
+import fr.epsi.lamarrave.personnages.Personnage;
 
 /**
  * Stock les informations d'un combat pour les classes "TourCombat" et "AttaqueCommande"
@@ -19,7 +20,7 @@ public class CombatDonnées {
 	public Adversaire adversaire;
 
 	/**
-	 * 
+	 * Personnage désigné comme attaquant
 	 */
 	public Personnage attaquant;
 

@@ -1,4 +1,4 @@
-package fr.epsi.lamarrave;
+package fr.epsi.lamarrave.personnages;
 
 /**
  * Classe permettant de créer des adversaires et de fournir une méthodes pour en piocher de manière aléatoire

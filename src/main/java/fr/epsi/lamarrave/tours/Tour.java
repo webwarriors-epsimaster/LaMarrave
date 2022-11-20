@@ -1,4 +1,6 @@
-package fr.epsi.lamarrave;
+package fr.epsi.lamarrave.tours;
+
+import fr.epsi.lamarrave.utilitaires.Maillon;
 
 /**
  * Représente un tour dans le jeu et pouvant s'obtenir aléatoirement en fonction de la chance qui lui est associé
