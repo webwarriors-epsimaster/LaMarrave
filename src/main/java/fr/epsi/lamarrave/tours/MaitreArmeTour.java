@@ -12,7 +12,7 @@ public class MaitreArmeTour extends Tour {
 	}
 
 	@Override
-	public void lancer(Object parametres) {
+	public void lancer() {
 		// Début du tour...
 
 		// Le héro rencontre le maitre d'armes

@@ -22,7 +22,7 @@ public class AttaqueCommande implements Commande {
 	/**
 	 * @param parametres
 	 */
-	public void lancer(Object parametres) {
+	public void lancer() {
 		// Début de l'attaque...
 
 		// Si aucun adversaire n'est désigné, alors faire :

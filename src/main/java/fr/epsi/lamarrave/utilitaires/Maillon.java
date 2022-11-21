@@ -25,9 +25,9 @@ public abstract class Maillon<T extends Maillon> implements Commande {
 	}
 
 	@Override
-	public void lancer(Object parametres) {
+	public void lancer() {
 		if (this.suivant != null) {
-			this.suivant.lancer(parametres);
+			this.suivant.lancer();
 		}
 	}
 	

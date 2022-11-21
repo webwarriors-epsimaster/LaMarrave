@@ -22,7 +22,7 @@ public class DefaiteCommande implements Commande {
 	/**
 	 * @param parametres
 	 */
-	public void lancer(Object parametres) {
+	public void lancer() {
 		// Le héro a perdu
 	}
 

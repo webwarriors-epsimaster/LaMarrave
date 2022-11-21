@@ -20,7 +20,7 @@ public class MonteeDeNiveauCommande implements Commande {
 	private Hero héro;
 
 	@Override
-	public void lancer(Object parametres) {
+	public void lancer() {
 		// Le héro monte de niveau
 	}
 

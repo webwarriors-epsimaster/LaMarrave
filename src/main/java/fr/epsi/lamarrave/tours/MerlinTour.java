@@ -12,7 +12,7 @@ public class MerlinTour extends Tour {
 	}
 
 	@Override
-	public void lancer(Object parametres) {
+	public void lancer() {
 		// Début du tour...
 
 		// Le héro rencontre Merlin

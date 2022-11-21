@@ -19,7 +19,7 @@ public class CombatTour extends Tour {
 	public CombatDonnées donnéesDuCombat;
 
 	@Override
-	public void lancer(Object parametres) {
+	public void lancer() {
 		// Début du tour...
 		
 		// Créer une commande d'attaque

@@ -19,10 +19,7 @@ public class SoinCommande implements Commande {
 	 */
 	private Hero héro;
 
-	/**
-	 * @param parametres
-	 */
-	public void lancer(Object parametres) {
+	public void lancer() {
 		// Le héro est soigné à 100%
 	}
 

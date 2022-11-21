@@ -5,9 +5,6 @@ package fr.epsi.lamarrave.utilitaires;
  */
 public interface Commande {
 
-	/**
-	 * @param parametres
-	 */
-	public void lancer(Object parametres);
+	public void lancer();
 
 }
