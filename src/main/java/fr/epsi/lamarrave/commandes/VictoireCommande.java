@@ -17,11 +17,6 @@ public class VictoireCommande implements Commande {
 	public VictoireCommande() {
 	}
 
-	/**
-	 * Héro récupéré depuis le Singleton
-	 */
-	private Hero héro;
-
 	@Override
 	public void lancer() {
 		if(Main.NB_TOURS >= 20){
