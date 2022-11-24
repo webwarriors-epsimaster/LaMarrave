@@ -25,6 +25,9 @@ public class Personnage {
 	 */
 	public int vieMax;
 
+	public int force;
+
+
 	/**
 	 * 
 	 */
