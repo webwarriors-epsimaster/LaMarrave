@@ -1,5 +1,7 @@
 package fr.epsi.lamarrave.tours;
 
+import java.util.Random;
+
 /**
  * 
  */
@@ -16,32 +18,41 @@ public class TourFabrique {
 	 * @return
 	 */
 	public Tour créerTour() {
-		// TODO implement here
-		return null;
+		CombatTour combatTour = this.créerCombatTour();
+		MerlinTour merlinTour = this.créerMerlinTour();
+		MaitreArmeTour maitreArmeTour = this.créerMaitreArmeTour();
+		
+		int probabilités = combatTour.chance + merlinTour.chance + maitreArmeTour.chance;
+		int aléatoire = new Random().nextInt(probabilités);
+
+		if (aléatoire < combatTour.chance) {
+			return combatTour;
+		} else if (aléatoire < combatTour.chance + merlinTour.chance) {
+			return merlinTour;
+		} else {
+			return maitreArmeTour;
+		}
 	}
 
 	/**
 	 * @return
 	 */
 	public MaitreArmeTour créerMaitreArmeTour() {
-		// TODO implement here
-		return null;
+		return new MaitreArmeTour();
 	}
 
 	/**
 	 * @return
 	 */
 	public MerlinTour créerMerlinTour() {
-		// TODO implement here
-		return null;
+		return new MerlinTour();
 	}
 
 	/**
 	 * @return
 	 */
 	public CombatTour créerCombatTour() {
-		// TODO implement here
-		return null;
+		return new CombatTour();
 	}
 
 }

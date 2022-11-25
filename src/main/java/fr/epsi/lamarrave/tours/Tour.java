@@ -11,6 +11,7 @@ public abstract class Tour extends Maillon<Tour> {
 	 * Default constructor
 	 */
 	public Tour() {
+		this.chance = 1;
 	}
 
 	/**
