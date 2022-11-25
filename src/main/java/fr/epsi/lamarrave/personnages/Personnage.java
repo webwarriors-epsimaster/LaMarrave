@@ -7,13 +7,7 @@ import fr.epsi.lamarrave.utilitaires.Observateur;
 /**
  * Classe représentant un personnage dans le jeu avec toutes les caractéristiques qui lui sont propre
  */
-public class Personnage {
-
-	/**
-	 * Default constructor
-	 */
-	public Personnage() {
-	}
+public abstract class Personnage {
 
 	/**
 	 * 
@@ -47,5 +41,10 @@ public class Personnage {
 	 * Observateurs de l'objet actuel
 	 */
 	public List<Observateur> observateurs;
+
+	/**
+	 * @return Nom de ce qui sera affiché lors de l'attaque (ex. Coup d'épée)
+	 */
+	public abstract String récupérerAttaque();
 
 }

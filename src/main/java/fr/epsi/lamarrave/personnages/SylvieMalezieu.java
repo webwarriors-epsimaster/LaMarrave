@@ -13,4 +13,10 @@ public class SylvieMalezieu extends Adversaire {
 	public SylvieMalezieu() {
 	}
 
+	@Override
+	public String récupérerAttaque() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -13,4 +13,10 @@ public class PascalBoyer extends Adversaire {
 	public PascalBoyer() {
 	}
 
+	@Override
+	public String récupérerAttaque() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
