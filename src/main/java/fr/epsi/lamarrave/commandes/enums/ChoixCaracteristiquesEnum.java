@@ -1,21 +1,25 @@
 package fr.epsi.lamarrave.commandes.enums;
 
-import fr.epsi.lamarrave.utilitaires.Singleton;
+import fr.epsi.lamarrave.commandes.strategies.caracteristiques.ModifierArmureCaracteristiqueStrategie;
+import fr.epsi.lamarrave.commandes.strategies.caracteristiques.ModifierForceCaracteristiqueStrategie;
+import fr.epsi.lamarrave.commandes.strategies.caracteristiques.ModifierVieMaximumCaracteristiqueStrategie;
+import fr.epsi.lamarrave.commandes.strategies.caracteristiques.PersonnageCaracteristiquesStrategie;
+import fr.epsi.lamarrave.personnages.Hero;
 
 import java.util.function.Function;
 
-public enum ChoixCaracteristiquesEnum implements Function<Integer, Integer> {
-    ARMURE((i -> Singleton.recupererHero().armure += (int)i), "ARMURE"),
-    PTS_VIE_MAX((i -> Singleton.recupererHero().vieMax += (int)i), "POINTS DE VIE MAXIMUM"),
-    FORCE((i -> Singleton.recupererHero().force += (int)i), "FORCE");
+public enum ChoixCaracteristiquesEnum {
+    ARMURE(new ModifierArmureCaracteristiqueStrategie(), "ARMURE"),
+    PTS_VIE_MAX(new ModifierVieMaximumCaracteristiqueStrategie(), "POINTS DE VIE MAXIMUM"),
+    FORCE(new ModifierForceCaracteristiqueStrategie(), "FORCE");
 
-    private Function<Object, Integer> updateCaracteristique;
+    private PersonnageCaracteristiquesStrategie strategie;
     private String libelle;
 
     private static final ChoixCaracteristiquesEnum[] values = values();
 
-    ChoixCaracteristiquesEnum(Function<Object, Integer> updateCaracteristique, String libelle) {
-        this.updateCaracteristique = updateCaracteristique;
+    ChoixCaracteristiquesEnum(PersonnageCaracteristiquesStrategie strategie, String libelle) {
+        this.strategie = strategie;
         this.libelle = libelle;
     }
 
@@ -38,8 +42,8 @@ public enum ChoixCaracteristiquesEnum implements Function<Integer, Integer> {
         return values()[numeroCaracteristique];
     }
 
-    @Override
-    public Integer apply(Integer i) {
-        return this.updateCaracteristique.apply(i);
+    public void ajouterPoints(Hero hero, int nbPoints){
+        this.strategie.executer(hero, nbPoints);
     }
+
 }
