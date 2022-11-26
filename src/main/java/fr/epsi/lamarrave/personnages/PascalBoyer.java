@@ -15,8 +15,7 @@ public class PascalBoyer extends Adversaire {
 
 	@Override
 	public String récupérerAttaque() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Attaque tétrachiée !!";
 	}
 
 }

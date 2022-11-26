@@ -8,10 +8,13 @@ import fr.epsi.lamarrave.utilitaires.Singleton;
  */
 public class MerlinTour extends Tour {
 
+	private final Hero hero;
+
 	/**
 	 * Default constructor
 	 */
 	public MerlinTour() {
+		this.hero = Singleton.recupererHero();
 	}
 
 	@Override
@@ -30,7 +33,6 @@ public class MerlinTour extends Tour {
 	}
 
 	private void soignerHero(){
-		Hero hero = Singleton.recupererHero();
 		hero.vie = hero.vieMax;
 	}
 
