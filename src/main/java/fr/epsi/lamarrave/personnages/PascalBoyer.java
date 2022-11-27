@@ -11,6 +11,9 @@ public class PascalBoyer extends Adversaire {
 	 * Default constructor
 	 */
 	public PascalBoyer() {
+		this.force += 10;
+		this.vie += 10;
+		this.armure += 4;
 	}
 
 	@Override
