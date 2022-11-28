@@ -10,15 +10,12 @@ import fr.epsi.lamarrave.utilitaires.Singleton;
  * Tour durant lequel le joueur monte d'un niveau grâce au maitre d'arme (voir la classe "CommandeMonteeDeNiveau")
  */
 public class MaitreArmeTour extends Tour {
-	private final TourFabrique factory;
-
 	private final Commande commande;
 
 	/**
 	 * Default constructor
 	 */
 	public MaitreArmeTour() {
-		this.factory = new TourFabrique();
 		this.commande = new MonteeDeNiveauCommande();
 	}
 
@@ -30,8 +27,10 @@ public class MaitreArmeTour extends Tour {
 		// Lancement de la commande
 		this.commande.lancer();
 
+		// Créer le tour suivant
+		créerTourSuivant();
+
 		// Lancer le tour suivant
-		this.setSuivant(factory.créerTour());
 		this.suivant.lancer();
 	}
 }

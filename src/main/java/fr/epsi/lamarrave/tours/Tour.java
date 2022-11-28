@@ -1,7 +1,6 @@
 package fr.epsi.lamarrave.tours;
 
 import fr.epsi.lamarrave.utilitaires.Maillon;
-import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
  * Représente un tour dans le jeu et pouvant s'obtenir aléatoirement en fonction
@@ -27,6 +26,7 @@ public abstract class Tour extends Maillon<Tour> {
 	protected void créerTourSuivant() {
 		// Créer un tour aléatoire
 		Tour tourSuivant = new TourFabrique().créerTour();
+		System.out.println("Le nouveau tour est : " + tourSuivant.getClass().getSimpleName());
 		
 		// Définir le tour comme étant le suivant
 		setSuivant(tourSuivant);
