@@ -42,16 +42,13 @@ public class CombatTour extends Tour {
 
 			// Définir le tour comme étant le suivant
 			setSuivant(combatTour);
-
-			// Lancer le tour suivant
-			lancer();
 		} else {
 			// Créer le tour suivant
 			créerTourSuivant();
-
-			// Lancer le tour suivant
-			lancer();
 		}
+
+		// Lancer le tour suivant
+		lancer();
 	}
 
 }
