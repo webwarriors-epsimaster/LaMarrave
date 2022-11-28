@@ -18,7 +18,7 @@ public class AttaqueCommande implements Commande {
                 + this.attaquant.force + " aux points de vie de "
                 + this.défenseur.getClass().getSimpleName());
 
-        // Calcule des dommages
+        // Calcul des dommages
         int dommages = (this.attaquant.force - this.défenseur.armure);
 
         if (dommages > 0) {
