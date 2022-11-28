@@ -27,17 +27,7 @@ public abstract class Tour extends Maillon<Tour> {
 	protected void créerTourSuivant() {
 		// Créer un tour aléatoire
 		Tour tourSuivant = new TourFabrique().créerTour();
-
-		// Si le tour suivant est un tour de combat et que celui-ci aussi
-		if (tourSuivant instanceof CombatTour && this instanceof CombatTour) {
-			((CombatTour) tourSuivant).donnéesDuCombat.adversaire = ((CombatTour) this).donnéesDuCombat.adversaire;
-
-			// L'attaquant devient défenseur et inversement
-			((CombatTour) tourSuivant).donnéesDuCombat.attaquant = ((CombatTour) this).donnéesDuCombat.attaquant == ((CombatTour) this).donnéesDuCombat.adversaire
-					? Singleton.recupererHero()
-					: ((CombatTour) this).donnéesDuCombat.adversaire;
-		}
-
+		
 		// Définir le tour comme étant le suivant
 		setSuivant(tourSuivant);
 	}
