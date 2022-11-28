@@ -1,5 +1,8 @@
 package fr.epsi.lamarrave.tours;
 
+import fr.epsi.lamarrave.commandes.CombatCommande;
+import fr.epsi.lamarrave.utilitaires.Singleton;
+
 /**
  * Tour opposant un attaquant et un défenseur choisi au hasard (s'il s'agit du
  * premier tour) entre le héro et un adversaire également tiré au hasard (s'il
@@ -11,6 +14,7 @@ public class CombatTour extends Tour {
 	 * Default constructor
 	 */
 	public CombatTour() {
+		this.donnéesDuCombat = new CombatDonnées();
 	}
 
 	/**
@@ -20,17 +24,34 @@ public class CombatTour extends Tour {
 
 	@Override
 	public void lancer() {
-		// Début du tour...
-		
-		// Créer une commande d'attaque
-		// Lancement de la commande d'attaque
+		// Créer une commande de combat
+		CombatCommande combatCommande = new CombatCommande(donnéesDuCombat);
 
-		// Créer un tour de combat dans lequel l'attaquant devient défenseur et inversement
-		// Définir le tour comme étant le suivant
-		// Si personne n'est vaincu, alors faire:
-		// ∟ Lancer le tour suivant
+		// Lancement de la commande de combat
+		combatCommande.lancer();
 
-		// ...Fin du tour
+		if (this.donnéesDuCombat.adversaire.vie > 0) {
+			// Créer un tour de combat
+			CombatTour combatTour = new CombatTour();
+			combatTour.donnéesDuCombat.adversaire = this.donnéesDuCombat.adversaire;
+
+			// L'attaquant devient défenseur et inversement
+			combatTour.donnéesDuCombat.attaquant = donnéesDuCombat.attaquant == donnéesDuCombat.adversaire
+					? Singleton.recupererHero()
+					: donnéesDuCombat.adversaire;
+
+			// Définir le tour comme étant le suivant
+			setSuivant(combatTour);
+
+			// Lancer le tour suivant
+			lancer();
+		} else {
+			// Créer le tour suivant
+			créerTourSuivant();
+
+			// Lancer le tour suivant
+			lancer();
+		}
 	}
 
 }
