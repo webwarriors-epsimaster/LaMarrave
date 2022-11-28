@@ -1,6 +1,8 @@
 package fr.epsi.lamarrave.tours;
 
+import fr.epsi.lamarrave.commandes.SoinCommande;
 import fr.epsi.lamarrave.personnages.Hero;
+import fr.epsi.lamarrave.utilitaires.Commande;
 import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
@@ -8,16 +10,15 @@ import fr.epsi.lamarrave.utilitaires.Singleton;
  */
 public class MerlinTour extends Tour {
 
-
-	private final Hero hero;
 	private final TourFabrique factory;
+	private final Commande commande;
 
 	/**
 	 * Default constructor
 	 */
 	public MerlinTour() {
-		this.hero = Singleton.recupererHero();
 		this.factory = new TourFabrique();
+		this.commande = new SoinCommande();
 	}
 
 	@Override
@@ -27,8 +28,8 @@ public class MerlinTour extends Tour {
 		// Le héro rencontre Merlin
 		System.out.println("Bonjour jeune Padawan, ta voie tu trouveras !");
 
-		// Lancement de la commande
-		this.soignerHero();
+		// Lancement de la commande de soin
+		this.commande.lancer();
 
 		// Lancer le tour suivant
 		this.setSuivant(factory.créerTour());
@@ -36,11 +37,5 @@ public class MerlinTour extends Tour {
 
 	}
 
-	private void soignerHero(){
-		final int pointsDeVieRestaures = hero.vieMax - hero.vie;
-
-		hero.vie = hero.vieMax;
-		System.out.println(String.format("Points de vie réstaurés", pointsDeVieRestaures));
-	}
 
 }
