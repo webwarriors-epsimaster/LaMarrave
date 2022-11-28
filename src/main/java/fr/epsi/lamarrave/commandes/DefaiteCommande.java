@@ -17,13 +17,16 @@ public class DefaiteCommande implements Commande {
 	/**
 	 * Héro récupéré depuis le Singleton
 	 */
-	private Hero héro;
+	private Hero hero;
 
 	/**
 	 * @param parametres
 	 */
 	public void lancer() {
 		// Le héro a perdu
+		if(hero.vie<=0) {
+			System.out.println("vous êtes mort, vous avez perdu, fin de la partie");
+		}
 	}
 
 }
