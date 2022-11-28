@@ -21,7 +21,7 @@ public abstract class Maillon<T extends Maillon> implements Commande {
 	 * @param s
 	 */
 	public void setSuivant(T s) {
-		// TODO implement here
+		this.suivant = s;
 	}
 
 	@Override

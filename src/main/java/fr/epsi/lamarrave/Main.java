@@ -1,5 +1,7 @@
 package fr.epsi.lamarrave;
 
+import fr.epsi.lamarrave.tours.TourFabrique;
+
 /**
  * Hello world!
  *
@@ -7,6 +9,6 @@ package fr.epsi.lamarrave;
 public class Main {
     public static int NB_TOURS = 0;
     public static void main( String[] args ) {
-        System.out.println( "Hello World!" );
+        new TourFabrique().créerTour().lancer();
     }
 }

@@ -35,14 +35,13 @@ public class CombatCommande implements Commande {
 		// Si aucun adversaire n'est désigné, alors faire :
 		// ∟ désigner un adversaire au hasard
 		if (this.donnéesDuCombat.adversaire == null) {
-			PersonnageFabrique fabrique = new PersonnageFabrique();
-			this.donnéesDuCombat.adversaire = fabrique.créerAdversaire();
+			this.donnéesDuCombat.adversaire = new PersonnageFabrique().créerAdversaire();
 
 			System.out.println("Vous tombez nez-à-nez avec "
 					+ this.donnéesDuCombat.adversaire.getClass().getSimpleName());
 
 			System.out.println("Continuer ?");
-			scanner.hasNext();
+			scanner.next();
 		}
 
 		// Si aucun attaquand n'est désigné, alors faire :
@@ -56,13 +55,13 @@ public class CombatCommande implements Commande {
 						+ " de commencer");
 
 				System.out.println("Continuer ?");
-				scanner.hasNext();
+				scanner.next();
 			} else {
 				this.donnéesDuCombat.attaquant = Singleton.recupererHero();
 
 				System.out.println("C'est à vous de commencer");
 				System.out.println("Continuer ?");
-				scanner.hasNext();
+				scanner.next();
 			}
 		}
 
@@ -83,7 +82,7 @@ public class CombatCommande implements Commande {
 
 		// ...Fin de l'attaque
 		System.out.println("Continuer ?");
-		scanner.hasNext();
+		scanner.next();
 	}
 
 }

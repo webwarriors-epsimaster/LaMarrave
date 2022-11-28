@@ -25,30 +25,36 @@ public class CombatTour extends Tour {
 	@Override
 	public void lancer() {
 		// Créer une commande de combat
-		CombatCommande combatCommande = new CombatCommande(donnéesDuCombat);
+		CombatCommande combatCommande = new CombatCommande(this.donnéesDuCombat);
 
 		// Lancement de la commande de combat
 		combatCommande.lancer();
 
+		// Création du tour suivant
+		this.créerTourSuivant();
+
+		// Lancer le tour suivant
+		this.suivant.lancer();
+	}
+
+	@Override
+	protected void créerTourSuivant() {
 		if (this.donnéesDuCombat.adversaire.vie > 0) {
 			// Créer un tour de combat
 			CombatTour combatTour = new CombatTour();
 			combatTour.donnéesDuCombat.adversaire = this.donnéesDuCombat.adversaire;
 
 			// L'attaquant devient défenseur et inversement
-			combatTour.donnéesDuCombat.attaquant = donnéesDuCombat.attaquant == donnéesDuCombat.adversaire
+			combatTour.donnéesDuCombat.attaquant = (this.donnéesDuCombat.attaquant == this.donnéesDuCombat.adversaire)
 					? Singleton.recupererHero()
-					: donnéesDuCombat.adversaire;
+					: this.donnéesDuCombat.adversaire;
 
 			// Définir le tour comme étant le suivant
 			setSuivant(combatTour);
 		} else {
 			// Créer le tour suivant
-			créerTourSuivant();
+			super.créerTourSuivant();
 		}
-
-		// Lancer le tour suivant
-		lancer();
 	}
 
 }
