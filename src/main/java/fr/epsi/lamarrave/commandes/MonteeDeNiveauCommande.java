@@ -25,8 +25,6 @@ public class MonteeDeNiveauCommande implements Commande {
 	 */
 	private final Hero hero;
 
-	private final Scanner scanner = new Scanner(System.in);
-
 	private final Commande commande = new AjoutDeCaracteristiquesCommande(3);
 
 	@Override

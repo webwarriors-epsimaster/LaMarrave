@@ -41,7 +41,7 @@ public class CombatCommande implements Commande {
 					+ this.donnéesDuCombat.adversaire.getClass().getSimpleName());
 
 			System.out.println("Continuer ?");
-			scanner.next();
+			scanner.nextLine();
 		}
 
 		// Si aucun attaquand n'est désigné, alors faire :
@@ -55,13 +55,13 @@ public class CombatCommande implements Commande {
 						+ " de commencer");
 
 				System.out.println("Continuer ?");
-				scanner.next();
+				scanner.nextLine();
 			} else {
 				this.donnéesDuCombat.attaquant = Singleton.recupererHero();
 
 				System.out.println("C'est à vous de commencer");
 				System.out.println("Continuer ?");
-				scanner.next();
+				scanner.nextLine();
 			}
 		}
 
@@ -82,7 +82,7 @@ public class CombatCommande implements Commande {
 
 		// ...Fin de l'attaque
 		System.out.println("Continuer ?");
-		scanner.next();
+		scanner.nextLine();
 	}
 
 }
