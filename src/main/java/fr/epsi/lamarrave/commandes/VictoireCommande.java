@@ -3,13 +3,14 @@ package fr.epsi.lamarrave.commandes;
 import fr.epsi.lamarrave.Main;
 import fr.epsi.lamarrave.personnages.Hero;
 import fr.epsi.lamarrave.utilitaires.Commande;
+import fr.epsi.lamarrave.utilitaires.Observateur;
 
 import java.util.Scanner;
 
 /**
  * 
  */
-public class VictoireCommande implements Commande {
+public class VictoireCommande implements Commande, Observateur {
 
 	/**
 	 * Default constructor
@@ -25,4 +26,8 @@ public class VictoireCommande implements Commande {
 		}
 	}
 
+	@Override
+	public void update() {
+		this.lancer();
+	}
 }

@@ -1,5 +1,8 @@
 package fr.epsi.lamarrave.tours;
 
+import fr.epsi.lamarrave.commandes.CommandeObservable;
+import fr.epsi.lamarrave.commandes.DefaiteCommande;
+import fr.epsi.lamarrave.commandes.VictoireCommande;
 import fr.epsi.lamarrave.utilitaires.Maillon;
 
 /**
@@ -7,12 +10,18 @@ import fr.epsi.lamarrave.utilitaires.Maillon;
  * de la chance qui lui est associé
  */
 public abstract class Tour extends Maillon<Tour> {
+	final CommandeObservable observable = new CommandeObservable();
 
 	/**
 	 * Default constructor
 	 */
 	public Tour() {
 		this.chance = 1;
+
+		//TODO : Créer un Singleton pour les deux commandes ci-dessous et ainsi évité l'instanciation excessives ??
+		observable.subscribe(new DefaiteCommande());
+		observable.subscribe(new VictoireCommande());
+		observable.notifyListeners();
 	}
 
 	/**
