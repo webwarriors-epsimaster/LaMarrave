@@ -6,33 +6,31 @@ package fr.epsi.lamarrave.personnages;
 public class PersonnageFabrique {
 
 	/**
-	 * Default constructor
-	 */
-	public PersonnageFabrique() {
-	}
-
-	/**
 	 * @return
 	 */
 	public Adversaire créerAdversaire() {
-		// TODO implement here
-		return null;
+		PascalBoyer pascalBoyer = this.créerPascalBoyer();
+		SylvieMalezieu sylvieMalezieu = this.créerSylvieMalezieu();
+
+		if (Math.random() >= 0.5) {
+			return pascalBoyer;
+		}
+
+		return sylvieMalezieu;
 	}
 
 	/**
 	 * @return
 	 */
 	public PascalBoyer créerPascalBoyer() {
-		// TODO implement here
-		return null;
+		return new PascalBoyer();
 	}
 
 	/**
 	 * @return
 	 */
 	public SylvieMalezieu créerSylvieMalezieu() {
-		// TODO implement here
-		return null;
+		return new SylvieMalezieu();
 	}
 
 }
