@@ -47,7 +47,7 @@ public class CombatCommande implements Commande {
 
 		// Si aucun attaquand n'est désigné, alors faire :
 		// ∟ désigner un attaquant au hasard entre le héro et l'adversaire
-		if (this.donnéesDuCombat.adversaire == null) {
+		if (this.donnéesDuCombat.attaquant == null) {
 			if (Math.random() < 0.5d) {
 				this.donnéesDuCombat.attaquant = this.donnéesDuCombat.adversaire;
 
