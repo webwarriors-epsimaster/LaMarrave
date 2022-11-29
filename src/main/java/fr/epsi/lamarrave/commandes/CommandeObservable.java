@@ -8,18 +8,15 @@ import java.util.List;
 public class CommandeObservable {
     List<Observateur> listeners = new ArrayList<Observateur>();
 
-    public CommandeObservable() {
-    }
-
-    public void subscribe(Observateur listener) {
+    public void souscrire(Observateur listener) {
         listeners.add(listener);
     }
 
-    public void unsubscribe(Observateur listener) {
+    public void desabonner(Observateur listener) {
         listeners.add(listener);
     }
 
-    public void notifyListeners() {
+    public void notifierLesObservateurs() {
         for (Observateur listener : listeners) {
             listener.update();
         }

@@ -19,9 +19,9 @@ public abstract class Tour extends Maillon<Tour> {
 		this.chance = 1;
 
 		//TODO : Créer un Singleton pour les deux commandes ci-dessous et ainsi évité l'instanciation excessives ??
-		observable.subscribe(new DefaiteCommande());
-		observable.subscribe(new VictoireCommande());
-		observable.notifyListeners();
+		observable.souscrire(new DefaiteCommande());
+		observable.souscrire(new VictoireCommande());
+		observable.notifierLesObservateurs();
 	}
 
 	/**
