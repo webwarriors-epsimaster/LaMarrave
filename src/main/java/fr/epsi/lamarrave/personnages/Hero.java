@@ -11,10 +11,11 @@ public class Hero extends Personnage {
 	 * Default constructor
 	 */
 	public Hero() {
-		this.vie = 100;
-		this.vieMax = 100;
-		this.armure = 10;
+		this.vie = 30;
+		this.vieMax = 30;
+		this.armure = 15;
 		this.niveau = 1;
+		this.force = 15;
 		this.pointsExpérience = 0;
 		this.observateurs = new ArrayList<>();
 	}

@@ -20,8 +20,8 @@ public class Singleton {
 	 * Instance persistée du singleton(si non défini, doit etre implémenté dans le récupérateur)
 	 */
 	private static Hero hero;
-	private static Commande defaiteCommande;
-	private static Commande victoireCommande;
+	private static Observateur defaiteCommande;
+	private static Observateur victoireCommande;
 
 	/**
 	 * Renvoie le singleton persisté
@@ -34,17 +34,19 @@ public class Singleton {
 		return hero;
 	}
 
-	public static Commande recupererDefaiteCommande() {
+	public static Observateur recupererDefaiteCommande() {
 		if(defaiteCommande == null){
 			defaiteCommande = new DefaiteCommande();
 		}
+		
 		return defaiteCommande;
 	}
 
-	public static Commande recupererVictoireCommande() {
+	public static Observateur recupererVictoireCommande() {
 		if(victoireCommande == null){
 			victoireCommande = new VictoireCommande();
 		}
+
 		return victoireCommande;
 	}
 

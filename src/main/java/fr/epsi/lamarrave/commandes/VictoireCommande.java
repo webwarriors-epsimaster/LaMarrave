@@ -23,6 +23,7 @@ public class VictoireCommande implements Commande, Observateur {
 		if(Main.NB_TOURS >= 20){
 			// Le héro a gagné la partie
 			System.out.println("Bravo ! Tu a gagné la partie en résistant aux 20 tours !");
+			System.exit(0);
 		}
 	}
 

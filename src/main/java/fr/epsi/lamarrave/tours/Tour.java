@@ -4,6 +4,7 @@ import fr.epsi.lamarrave.commandes.CommandeObservable;
 import fr.epsi.lamarrave.commandes.DefaiteCommande;
 import fr.epsi.lamarrave.commandes.VictoireCommande;
 import fr.epsi.lamarrave.utilitaires.Maillon;
+import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
  * Représente un tour dans le jeu et pouvant s'obtenir aléatoirement en fonction
@@ -18,9 +19,8 @@ public abstract class Tour extends Maillon<Tour> {
 	public Tour() {
 		this.chance = 1;
 
-		//TODO : Créer un Singleton pour les deux commandes ci-dessous et ainsi évité l'instanciation excessives ??
-		observable.souscrire(new DefaiteCommande());
-		observable.souscrire(new VictoireCommande());
+		observable.souscrire(Singleton.recupererDefaiteCommande());
+		observable.souscrire(Singleton.recupererVictoireCommande());
 		observable.notifierLesObservateurs();
 	}
 
@@ -33,6 +33,8 @@ public abstract class Tour extends Maillon<Tour> {
 	 * Créé un tour aléatoire et le spécifie comme étant le tour suivant
 	 */
 	protected void créerTourSuivant() {
+		System.out.println("\n\n");
+
 		// Créer un tour aléatoire
 		Tour tourSuivant = new TourFabrique().créerTour();
 		System.out.println("Le nouveau tour est : " + tourSuivant.getClass().getSimpleName());

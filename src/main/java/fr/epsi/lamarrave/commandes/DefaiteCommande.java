@@ -28,6 +28,7 @@ public class DefaiteCommande implements Commande, Observateur {
 		// Le héro a perdu
 		if(hero.vie < 1) {
 			System.out.println("vous êtes mort, vous avez perdu, fin de la partie");
+			System.exit(0);
 		}
 	}
 
