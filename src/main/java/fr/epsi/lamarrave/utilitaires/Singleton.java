@@ -1,5 +1,8 @@
 package fr.epsi.lamarrave.utilitaires;
 
+import fr.epsi.lamarrave.commandes.DefaiteCommande;
+import fr.epsi.lamarrave.commandes.SoinCommande;
+import fr.epsi.lamarrave.commandes.VictoireCommande;
 import fr.epsi.lamarrave.personnages.Hero;
 
 /**
@@ -17,6 +20,8 @@ public class Singleton {
 	 * Instance persistée du singleton(si non défini, doit etre implémenté dans le récupérateur)
 	 */
 	private static Hero hero;
+	private static Commande defaiteCommande;
+	private static Commande victoireCommande;
 
 	/**
 	 * Renvoie le singleton persisté
@@ -27,6 +32,20 @@ public class Singleton {
 			hero = new Hero();
 		}
 		return hero;
+	}
+
+	public static Commande recupererDefaiteCommande() {
+		if(defaiteCommande == null){
+			defaiteCommande = new DefaiteCommande();
+		}
+		return defaiteCommande;
+	}
+
+	public static Commande recupererVictoireCommande() {
+		if(victoireCommande == null){
+			victoireCommande = new VictoireCommande();
+		}
+		return victoireCommande;
 	}
 
 }
