@@ -1,5 +1,6 @@
 package fr.epsi.lamarrave.tours;
 
+import fr.epsi.lamarrave.Main;
 import fr.epsi.lamarrave.commandes.CombatCommande;
 import fr.epsi.lamarrave.utilitaires.Singleton;
 
@@ -14,6 +15,7 @@ public class CombatTour extends Tour {
 	 * Default constructor
 	 */
 	public CombatTour() {
+		super();
 		this.donnéesDuCombat = new CombatDonnées();
 	}
 
@@ -51,6 +53,9 @@ public class CombatTour extends Tour {
 
 			// Définir le tour comme étant le suivant
 			setSuivant(combatTour);
+
+			// Incrémenter le compte de tours
+			Main.NB_TOURS++;
 		} else {
 			// Créer le tour suivant
 			super.créerTourSuivant();

@@ -13,6 +13,7 @@ public class MerlinTour extends Tour {
 	 * Default constructor
 	 */
 	public MerlinTour() {
+		super();
 		this.commande = new SoinCommande();
 	}
 

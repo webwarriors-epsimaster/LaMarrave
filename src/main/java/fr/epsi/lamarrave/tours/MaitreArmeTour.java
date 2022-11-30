@@ -1,10 +1,7 @@
 package fr.epsi.lamarrave.tours;
 
 import fr.epsi.lamarrave.commandes.MonteeDeNiveauCommande;
-import fr.epsi.lamarrave.commandes.SoinCommande;
-import fr.epsi.lamarrave.personnages.Hero;
 import fr.epsi.lamarrave.utilitaires.ICommande;
-import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
  * Tour durant lequel le joueur monte d'un niveau grâce au maitre d'arme (voir la classe "CommandeMonteeDeNiveau")
@@ -16,6 +13,7 @@ public class MaitreArmeTour extends Tour {
 	 * Default constructor
 	 */
 	public MaitreArmeTour() {
+		super();
 		this.commande = new MonteeDeNiveauCommande();
 	}
 

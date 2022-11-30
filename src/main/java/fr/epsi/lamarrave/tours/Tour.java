@@ -1,5 +1,6 @@
 package fr.epsi.lamarrave.tours;
 
+import fr.epsi.lamarrave.Main;
 import fr.epsi.lamarrave.commandes.DefaiteCommande;
 import fr.epsi.lamarrave.commandes.VictoireCommande;
 import fr.epsi.lamarrave.utilitaires.Maillon;
@@ -34,13 +35,16 @@ public abstract class Tour extends Maillon<Tour> {
 	 */
 	protected void créerTourSuivant() {
 		System.out.println("\n\n");
-
+		
 		// Créer un tour aléatoire
 		Tour tourSuivant = new TourFabrique().créerTour();
 		System.out.println("Le nouveau tour est : " + tourSuivant.getClass().getSimpleName());
 		
 		// Définir le tour comme étant le suivant
 		setSuivant(tourSuivant);
+
+		// Incrémenter le compte de tours
+		Main.NB_TOURS++;
 	}
 
 }
