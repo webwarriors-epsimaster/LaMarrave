@@ -11,7 +11,7 @@ Créé par Elodie LABORDE, Sofiane NASRI, Maïn CHAABEN & Tristan MULLER
 
 ### Diagramme de séquence
 #### Diagramme de séquence concernant l'ajout de caractéristiques par l'utilisateur.
-![Diagramme de séquence](.docfiles/diagramme_sequence_ajout_caracteristiques.svg)
+![Diagramme de séquence](.docfiles/diagramme_sequence_ajout_caracteristiques.png)
 
 
 ### Patrons de conceptions utilisés
