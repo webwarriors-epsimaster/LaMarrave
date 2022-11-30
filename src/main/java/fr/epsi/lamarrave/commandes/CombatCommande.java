@@ -5,13 +5,13 @@ import java.util.Scanner;
 import fr.epsi.lamarrave.personnages.Personnage;
 import fr.epsi.lamarrave.personnages.PersonnageFabrique;
 import fr.epsi.lamarrave.tours.CombatDonnées;
-import fr.epsi.lamarrave.utilitaires.Commande;
+import fr.epsi.lamarrave.utilitaires.ICommande;
 import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
  * 
  */
-public class CombatCommande implements Commande {
+public class CombatCommande implements ICommande {
 
 	/**
 	 * Default constructor

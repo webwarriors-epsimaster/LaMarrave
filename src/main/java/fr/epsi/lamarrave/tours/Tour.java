@@ -1,9 +1,9 @@
 package fr.epsi.lamarrave.tours;
 
-import fr.epsi.lamarrave.commandes.CommandeObservable;
 import fr.epsi.lamarrave.commandes.DefaiteCommande;
 import fr.epsi.lamarrave.commandes.VictoireCommande;
 import fr.epsi.lamarrave.utilitaires.Maillon;
+import fr.epsi.lamarrave.utilitaires.Observable;
 import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
@@ -11,7 +11,7 @@ import fr.epsi.lamarrave.utilitaires.Singleton;
  * de la chance qui lui est associé
  */
 public abstract class Tour extends Maillon<Tour> {
-	final CommandeObservable observable = new CommandeObservable();
+	private final Observable observable = new Observable();
 
 	/**
 	 * Default constructor

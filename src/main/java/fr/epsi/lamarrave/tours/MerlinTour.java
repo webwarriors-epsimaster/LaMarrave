@@ -1,13 +1,13 @@
 package fr.epsi.lamarrave.tours;
 
 import fr.epsi.lamarrave.commandes.SoinCommande;
-import fr.epsi.lamarrave.utilitaires.Commande;
+import fr.epsi.lamarrave.utilitaires.ICommande;
 
 /**
  * Tour durant lequel le héro se voit être soigné par Merlin (voir la classe "SoinCommande")
  */
 public class MerlinTour extends Tour {
-	private final Commande commande;
+	private final ICommande commande;
 
 	/**
 	 * Default constructor

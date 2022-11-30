@@ -3,7 +3,7 @@ package fr.epsi.lamarrave.commandes.enums;
 import fr.epsi.lamarrave.commandes.strategies.caracteristiques.ModifierArmureCaracteristiqueStrategie;
 import fr.epsi.lamarrave.commandes.strategies.caracteristiques.ModifierForceCaracteristiqueStrategie;
 import fr.epsi.lamarrave.commandes.strategies.caracteristiques.ModifierVieMaximumCaracteristiqueStrategie;
-import fr.epsi.lamarrave.commandes.strategies.caracteristiques.PersonnageCaracteristiquesStrategie;
+import fr.epsi.lamarrave.commandes.strategies.caracteristiques.IPersonnageCaracteristiquesStrategie;
 import fr.epsi.lamarrave.personnages.Hero;
 
 import java.util.function.Function;
@@ -13,12 +13,12 @@ public enum ChoixCaracteristiquesEnum {
     PTS_VIE_MAX(new ModifierVieMaximumCaracteristiqueStrategie(), "POINTS DE VIE MAXIMUM"),
     FORCE(new ModifierForceCaracteristiqueStrategie(), "FORCE");
 
-    private PersonnageCaracteristiquesStrategie strategie;
+    private IPersonnageCaracteristiquesStrategie strategie;
     private String libelle;
 
     private static final ChoixCaracteristiquesEnum[] values = values();
 
-    ChoixCaracteristiquesEnum(PersonnageCaracteristiquesStrategie strategie, String libelle) {
+    ChoixCaracteristiquesEnum(IPersonnageCaracteristiquesStrategie strategie, String libelle) {
         this.strategie = strategie;
         this.libelle = libelle;
     }

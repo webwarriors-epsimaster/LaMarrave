@@ -1,14 +1,14 @@
 package fr.epsi.lamarrave.commandes;
 
 import fr.epsi.lamarrave.personnages.Hero;
-import fr.epsi.lamarrave.utilitaires.Commande;
-import fr.epsi.lamarrave.utilitaires.Observateur;
+import fr.epsi.lamarrave.utilitaires.ICommande;
+import fr.epsi.lamarrave.utilitaires.IObservateur;
 import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
  * 
  */
-public class DefaiteCommande implements Commande, Observateur {
+public class DefaiteCommande implements ICommande, IObservateur {
 	/**
 	 * Héro récupéré depuis le Singleton
 	 */
@@ -33,7 +33,7 @@ public class DefaiteCommande implements Commande, Observateur {
 	}
 
 	@Override
-	public void update() {
+	public void notifier() {
 		this.lancer();
 	}
 }

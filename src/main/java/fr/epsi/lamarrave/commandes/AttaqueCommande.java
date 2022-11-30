@@ -1,9 +1,9 @@
 package fr.epsi.lamarrave.commandes;
 
 import fr.epsi.lamarrave.personnages.Personnage;
-import fr.epsi.lamarrave.utilitaires.Commande;
+import fr.epsi.lamarrave.utilitaires.ICommande;
 
-public class AttaqueCommande implements Commande {
+public class AttaqueCommande implements ICommande {
 
     public Personnage attaquant;
     public Personnage défenseur;

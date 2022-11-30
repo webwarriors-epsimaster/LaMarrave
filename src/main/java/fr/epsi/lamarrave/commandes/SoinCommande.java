@@ -1,13 +1,13 @@
 package fr.epsi.lamarrave.commandes;
 
 import fr.epsi.lamarrave.personnages.Hero;
-import fr.epsi.lamarrave.utilitaires.Commande;
+import fr.epsi.lamarrave.utilitaires.ICommande;
 import fr.epsi.lamarrave.utilitaires.Singleton;
 
 /**
  * 
  */
-public class SoinCommande implements Commande {
+public class SoinCommande implements ICommande {
 
 	private final Hero hero;
 

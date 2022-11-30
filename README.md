@@ -30,3 +30,9 @@ Les tâches restantes ont été distribué de manière aléatoire :
  - Tristan : Implémenter le Héro, Implémenter le Tour, Implémenter la fabrique de tours, Implémenter la commande d'attaque
  - Elodie : Implémenter SylvieMalzieu, Implémenter le tour du maitre d'arme, Implémenter le tour de combat, Implémenter la commande de défaite
  - Sofiane : Implémenter PascalBoyer, Implémenter le tour de Merlin, Implémenter la commande de victoire, Implémenter la commande de montée de niveau
+
+## Post-implémentation
+
+L'architecture a subit quelques modifications durant l'implémentation, nus avons rajouté de nouvelles classes pour répondre au mieux au besoin tout en gardant notre architecture de départ intacte.
+
+![architecture-post-implémentation](.docfiles/postImplémentation.svg)

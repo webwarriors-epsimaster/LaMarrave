@@ -2,7 +2,7 @@ package fr.epsi.lamarrave.personnages;
 
 import java.util.List;
 
-import fr.epsi.lamarrave.utilitaires.Observateur;
+import fr.epsi.lamarrave.utilitaires.IObservateur;
 
 /**
  * Classe représentant un personnage dans le jeu avec toutes les caractéristiques qui lui sont propre
@@ -40,7 +40,7 @@ public abstract class Personnage {
 	/**
 	 * Observateurs de l'objet actuel
 	 */
-	public List<Observateur> observateurs;
+	public List<IObservateur> observateurs;
 
 	/**
 	 * @return Nom de ce qui sera affiché lors de l'attaque (ex. Coup d'épée)

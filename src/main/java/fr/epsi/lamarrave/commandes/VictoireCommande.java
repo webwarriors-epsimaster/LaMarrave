@@ -2,15 +2,15 @@ package fr.epsi.lamarrave.commandes;
 
 import fr.epsi.lamarrave.Main;
 import fr.epsi.lamarrave.personnages.Hero;
-import fr.epsi.lamarrave.utilitaires.Commande;
-import fr.epsi.lamarrave.utilitaires.Observateur;
+import fr.epsi.lamarrave.utilitaires.ICommande;
+import fr.epsi.lamarrave.utilitaires.IObservateur;
 
 import java.util.Scanner;
 
 /**
  * 
  */
-public class VictoireCommande implements Commande, Observateur {
+public class VictoireCommande implements ICommande, IObservateur {
 
 	/**
 	 * Default constructor
@@ -28,7 +28,7 @@ public class VictoireCommande implements Commande, Observateur {
 	}
 
 	@Override
-	public void update() {
+	public void notifier() {
 		this.lancer();
 	}
 }
