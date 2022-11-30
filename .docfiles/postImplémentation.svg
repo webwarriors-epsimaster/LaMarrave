@@ -960,100 +960,13 @@
             </g>
         </g>
         <g transform="translate(-134,-134) scale(1,1)">
-            <rect fill="#C0C0C0" stroke="none" x="1959" y="759" width="297.59954833984375" height="44" opacity="0.2" />
+            <path fill="none" stroke="#a00000" d="M 2184 693 L 2170.9166666666665 728" stroke-miterlimit="10" />
         </g>
         <g transform="translate(-134,-134) scale(1,1)">
-            <rect fill="#fff5d8" stroke="none" x="1952" y="752" width="297.59954833984375" height="44" />
+            <path fill="none" stroke="#a00000" d="M 2146 629 L 2156.25 728" stroke-miterlimit="10" />
         </g>
         <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 1952 752 L 2249.5995483398438 752 L 2249.5995483398438 796 L 1952 796 L 1952 752 Z Z" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 1952 777 L 2249.5995483398438 777" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 1952 787 L 2249.5995483398438 787" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <g>
-                <path fill="none" stroke="none" />
-                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1956.5" y="771.5">ModifierForceCaracteristiqueStrategie</text>
-            </g>
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <rect fill="#C0C0C0" stroke="none" x="2007" y="687" width="305.3995361328125" height="44" opacity="0.2" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <rect fill="#fff5d8" stroke="none" x="2000" y="680" width="305.3995361328125" height="44" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2000 680 L 2305.3995361328125 680 L 2305.3995361328125 724 L 2000 724 L 2000 680 Z Z" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2000 705 L 2305.3995361328125 705" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2000 715 L 2305.3995361328125 715" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <g>
-                <path fill="none" stroke="none" />
-                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="2004.5" y="699.5">ModifierArmureCaracteristiqueStrategie</text>
-            </g>
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <rect fill="#C0C0C0" stroke="none" x="2031" y="615" width="336.5994873046875" height="44" opacity="0.2" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <rect fill="#fff5d8" stroke="none" x="2024" y="608" width="336.5994873046875" height="44" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2024 608 L 2360.5994873046875 608 L 2360.5994873046875 652 L 2024 652 L 2024 608 Z Z" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2024 633 L 2360.5994873046875 633" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2024 643 L 2360.5994873046875 643" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <g>
-                <path fill="none" stroke="none" />
-                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="2028.5" y="627.5">ModifierVieMaximumCaracteristiqueStrategie</text>
-            </g>
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="#C0C0C0" stroke="none" d="M 2155.19970703125 522.5 C 2155.19970703125 516.1487248 2160.34843183125 511 2166.69970703125 511 C 2173.05098223125 511 2178.19970703125 516.1487248 2178.19970703125 522.5 C 2178.19970703125 528.8512752 2173.05098223125 534 2166.69970703125 534 C 2160.34843183125 534 2155.19970703125 528.8512752 2155.19970703125 522.5 Z" opacity="0.2" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="#fff5d8" stroke="none" d="M 2148.19970703125 515.5 C 2148.19970703125 509.1487248 2153.34843183125 504 2159.69970703125 504 C 2166.05098223125 504 2171.19970703125 509.1487248 2171.19970703125 515.5 C 2171.19970703125 521.8512752 2166.05098223125 527 2159.69970703125 527 C 2153.34843183125 527 2148.19970703125 521.8512752 2148.19970703125 515.5 Z" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2148.19970703125 515.5 C 2148.19970703125 509.1487248 2153.34843183125 504 2159.69970703125 504 C 2166.05098223125 504 2171.19970703125 509.1487248 2171.19970703125 515.5 C 2171.19970703125 521.8512752 2166.05098223125 527 2159.69970703125 527 C 2153.34843183125 527 2148.19970703125 521.8512752 2148.19970703125 515.5 Z" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 1968 552 L 2351.3994140625 552" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <g>
-                <path fill="none" stroke="none" />
-                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="2019.2999267578125" y="546.5">IPersonnageCaractéristiquesStratégie</text>
-            </g>
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <g>
-                <path fill="none" stroke="none" />
-                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1973" y="569.5">+executer(personnage: Personnage, nbPoints: int)</text>
-            </g>
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2184 607 L 2161.55737704918 527" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2153 679 L 2158.6065573770493 527" stroke-miterlimit="10" />
-        </g>
-        <g transform="translate(-134,-134) scale(1,1)">
-            <path fill="none" stroke="#a00000" d="M 2106 751 L 2157.2295081967213 527" stroke-miterlimit="10" />
+            <path fill="none" stroke="#a00000" d="M 2106 557 L 2150.75 728" stroke-miterlimit="10" />
         </g>
         <g transform="translate(-134,-134) scale(1,1)">
             <rect fill="#C0C0C0" stroke="none" x="2055" y="879" width="313.19952392578125" height="113" opacity="0.2" />
@@ -1342,6 +1255,99 @@
         </g>
         <g transform="translate(-134,-134) scale(1,1)">
             <path fill="none" stroke="#a00000" d="M 1909.0345262570586 242.49352878668873 L 1899 247 L 1909.2820379165148 250.90892520820617 L 1920.9904905982157 246.35322086475836 L 1909.0345262570586 242.49352878668873" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 2188 871 L 2169 800" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 2175.693577778767 808.7290329658902 L 2169 800 L 2167.5607158343837 810.9054326411475" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="#C0C0C0" stroke="none" d="M 2155.19970703125 746.5 C 2155.19970703125 740.1487248 2160.34843183125 735 2166.69970703125 735 C 2173.05098223125 735 2178.19970703125 740.1487248 2178.19970703125 746.5 C 2178.19970703125 752.8512752 2173.05098223125 758 2166.69970703125 758 C 2160.34843183125 758 2155.19970703125 752.8512752 2155.19970703125 746.5 Z" opacity="0.2" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="#fff5d8" stroke="none" d="M 2148.19970703125 739.5 C 2148.19970703125 733.1487248 2153.34843183125 728 2159.69970703125 728 C 2166.05098223125 728 2171.19970703125 733.1487248 2171.19970703125 739.5 C 2171.19970703125 745.8512752 2166.05098223125 751 2159.69970703125 751 C 2153.34843183125 751 2148.19970703125 745.8512752 2148.19970703125 739.5 Z" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 2148.19970703125 739.5 C 2148.19970703125 733.1487248 2153.34843183125 728 2159.69970703125 728 C 2166.05098223125 728 2171.19970703125 733.1487248 2171.19970703125 739.5 C 2171.19970703125 745.8512752 2166.05098223125 751 2159.69970703125 751 C 2153.34843183125 751 2148.19970703125 745.8512752 2148.19970703125 739.5 Z" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 1968 776 L 2351.3994140625 776" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <g>
+                <path fill="none" stroke="none" />
+                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="2019.2999267578125" y="770.5">IPersonnageCaractéristiquesStratégie</text>
+            </g>
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <g>
+                <path fill="none" stroke="none" />
+                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1973" y="793.5">+executer(personnage: Personnage, nbPoints: int)</text>
+            </g>
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <rect fill="#C0C0C0" stroke="none" x="2031" y="655" width="336.5994873046875" height="44" opacity="0.2" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <rect fill="#fff5d8" stroke="none" x="2024" y="648" width="336.5994873046875" height="44" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 2024 648 L 2360.5994873046875 648 L 2360.5994873046875 692 L 2024 692 L 2024 648 Z Z" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 2024 673 L 2360.5994873046875 673" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 2024 683 L 2360.5994873046875 683" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <g>
+                <path fill="none" stroke="none" />
+                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="2028.5" y="667.5">ModifierVieMaximumCaracteristiqueStrategie</text>
+            </g>
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <rect fill="#C0C0C0" stroke="none" x="1999" y="591" width="305.3995361328125" height="44" opacity="0.2" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <rect fill="#fff5d8" stroke="none" x="1992" y="584" width="305.3995361328125" height="44" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 1992 584 L 2297.3995361328125 584 L 2297.3995361328125 628 L 1992 628 L 1992 584 Z Z" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 1992 609 L 2297.3995361328125 609" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 1992 619 L 2297.3995361328125 619" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <g>
+                <path fill="none" stroke="none" />
+                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1996.5" y="603.5">ModifierArmureCaracteristiqueStrategie</text>
+            </g>
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <rect fill="#C0C0C0" stroke="none" x="1959" y="519" width="297.59954833984375" height="44" opacity="0.2" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <rect fill="#fff5d8" stroke="none" x="1952" y="512" width="297.59954833984375" height="44" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 1952 512 L 2249.5995483398438 512 L 2249.5995483398438 556 L 1952 556 L 1952 512 Z Z" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 1952 537 L 2249.5995483398438 537" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <path fill="none" stroke="#a00000" d="M 1952 547 L 2249.5995483398438 547" stroke-miterlimit="10" />
+        </g>
+        <g transform="translate(-134,-134) scale(1,1)">
+            <g>
+                <path fill="none" stroke="none" />
+                <text fill="#000000" stroke="none" font-family="Source Code Pro" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1956.5" y="531.5">ModifierForceCaracteristiqueStrategie</text>
+            </g>
         </g>
     </g>
 </svg>

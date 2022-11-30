@@ -26,10 +26,10 @@ Grâce au logiciel de conception "*StarUML*", nous avons pu générer les classe
 
 Les tâches restantes ont été distribué de manière aléatoire :
 
- - Main : Implémenter le Personnage, Implémenter la fabrique de personnages, Implémenter les données du combat, Implémenter la commande de soin
- - Tristan : Implémenter le Héro, Implémenter le Tour, Implémenter la fabrique de tours, Implémenter la commande d'attaque
- - Elodie : Implémenter SylvieMalzieu, Implémenter le tour du maitre d'arme, Implémenter le tour de combat, Implémenter la commande de défaite
- - Sofiane : Implémenter PascalBoyer, Implémenter le tour de Merlin, Implémenter la commande de victoire, Implémenter la commande de montée de niveau
+ - **Main** : Implémenter le Personnage, Implémenter la fabrique de personnages, Implémenter les données du combat, Implémenter la commande de soin
+ - **Tristan** : Implémenter le Héro, Implémenter le Tour, Implémenter la fabrique de tours, Implémenter la commande d'attaque
+ - **Elodie** : Implémenter SylvieMalzieu, Implémenter le tour du maitre d'arme, Implémenter le tour de combat, Implémenter la commande de défaite
+ - **Sofiane** : Implémenter PascalBoyer, Implémenter le tour de Merlin, Implémenter la commande de victoire, Implémenter la commande de montée de niveau
 
 ## Post-implémentation
 
